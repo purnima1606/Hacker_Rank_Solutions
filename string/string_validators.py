@@ -46,7 +46,7 @@ Input Format
 A single line containing a string S.
 
 Constraints
-1 <= len(S) <= 1000
+1 <= len(S) < 1000
 
 Output Format
 
@@ -68,10 +68,12 @@ True
 True
 """
 
-s = input()
-print(any(s.isalnum(i)) for i in s )
-print(any(s.isalpha()) for i in s)
-print(any(s.isdigit()) for i in s)
-print(any(s.islower()) for i in s)
-print(any(s.isupper()) for i in s)
+if __name__ == '__main__':
+    s = input()
+    print(any(i.isalnum() for i in s))
+    print(any(i.isalpha() for i in s))
+    print(any(i.isdigit() for i in s))
+    print(any(i.islower() for i in s))
+    print(any(i.isupper() for i in s))
+
 
