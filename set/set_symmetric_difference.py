@@ -65,6 +65,14 @@ fren = set(map(int, input().split()))
 res = eng.symmetric_difference(fren)
 print(len(res))
 
+# Same Method
+m = int(input())
+s1 = set(map(int, input().split( )))
+n = int(input())
+s2 = set(map(int, input().split()))
+res = s1.symmetric_difference(s2)
+for i in sorted(res):
+    print(i)
 
 
 
